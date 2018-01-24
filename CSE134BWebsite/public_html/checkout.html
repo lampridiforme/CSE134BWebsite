@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Checkout</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="header">
+            <a href="./index.html">
+                <img src="" alt="Logo"/>
+            </a>
+            <p>
+                <a href="./cart.html">Cart (0)</a>
+            </p>
+            <p>
+                <a href="./index.html">Log Out</a>
+            </p>
+        </div>
+        <div id="categoryHeading">
+            <!-- need to keep a variable to keep track of which webpage to go back to -->
+            <p>
+                <a href="./cart.html">Back</a>
+            </p>
+            <p>Checkout:</p>
+        </div>
+        <div id="address">
+            <p>
+                Delivery Address
+            </p>
+            <form>
+                Address line 1:
+                <input type="text" name="address1">
+                <br>
+                Address line 2:
+                <input type="text" name="address2">
+                <br>
+                City:
+                <input type="text" name="city">
+                <br>
+                Zip code:
+                <input type="text" name="zip">
+                <br>
+            </form>
+        </div>
+        <div id="paymentInfo">
+            <p>
+                Payment Info
+            </p>
+            <form>
+                <input type="radio" name="paymentMethod" value="credit" checked>Credit
+                <br>
+                Card Number:
+                <input type="text" name="cardNumber">
+                <br>
+                Expiry Date:
+                <select name="month">
+                    <option value="january">01</option>
+                    <option value="february">02</option>
+                    <option value="march">03</option>
+                    <option value="april">04</option>
+                    <option value="may">05</option>
+                    <option value="june">06</option>
+                    <option value="july">07</option>
+                    <option value="august">08</option>
+                    <option value="september">09</option>
+                    <option value="october">10</option>
+                    <option value="november">11</option>
+                    <option value="december">12</option>
+                </select>
+                <select name="year">
+                    <option value="year0">2018</option>
+                    <option value="year1">2019</option>
+                    <option value="year2">2020</option>
+                    <option value="year3">2021</option>
+                    <option value="year4">2022</option>
+                    <option value="year5">2023</option>
+                </select>
+                <br>
+                Verification Number:
+                <input type="text" name="verificationNumber">
+                What's this?
+                <br>
+                <input type="radio" name="paymentMethod" value="paypal">Paypal
+            </form>
+        </div>
+        <div id="footer">
+            <p>About Us</p>
+        </div>
+    </body>
+</html>
