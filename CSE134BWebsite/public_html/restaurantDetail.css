@@ -1,0 +1,31 @@
+﻿body {
+}
+
+
+.menuHeading{
+    display:block;
+    font-size: 300%;
+    font-style: oblique;
+
+}
+
+.selection{
+    display:block;
+}
+
+.itemInfo{
+    display:block;
+    font-size: 100%;
+    font-style: oblique;
+}
+
+.add_to_cart{
+    color:black;
+    font-size: 120%;
+    padding: 1.0em 1.0em;
+    text-align:center;
+    width: 150px;
+    height: 40px;
+
+}
+
