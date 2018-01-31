@@ -9,6 +9,7 @@ and open the template in the editor.
         <title>Checkout</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./checkout.css" />
     </head>
     <body>
         <div id="header">
@@ -27,12 +28,12 @@ and open the template in the editor.
             <p>
                 <a href="./cart.html">Back</a>
             </p>
-            <p>Checkout:</p>
+            <p class="page_heading">Checkout</p>
         </div>
         <div id="address">
-            <p>
-                Delivery Address
-            </p>
+            <div class="block_heading">
+                <p>Delivery Address</p>
+            </div>
             <form>
                 Address line 1:
                 <input type="text" name="address1">
@@ -48,10 +49,11 @@ and open the template in the editor.
                 <br>
             </form>
         </div>
+
         <div id="paymentInfo">
-            <p>
-                Payment Info
-            </p>
+            <div class=block_heading>
+                <p>Payment Info </p>
+            </div>
             <form>
                 <input type="radio" name="paymentMethod" value="credit" checked>Credit
                 <br>
@@ -89,8 +91,17 @@ and open the template in the editor.
                 <input type="radio" name="paymentMethod" value="paypal">Paypal
             </form>
         </div>
-        <div id="footer">
-            <p>About Us</p>
+
+        <div id="submit">
+            <p>
+                <a href="./Progress.html">Submit</a>
+            </p>
+        </div>
+
+        <div class="footer">
+            <a id="about_us" href="www.google.com"> About Us</a>
+            <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+            <a id="contact" href="..."> Contact</a>
         </div>
     </body>
 </html>

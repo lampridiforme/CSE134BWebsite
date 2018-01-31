@@ -1,0 +1,33 @@
+body {
+}
+
+.page_heading{
+    font-size: 300%;
+}
+
+.block_heading{
+    font-size: 150%;
+    color: darkred;
+    margin-top:30px;
+}
+
+.footer {
+    background-color: darkgray;
+    font-style: italic;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center
+}
+
+    .footer about_us {
+        color: blue;
+        text-align: left
+    }
+
+    .footer contact {
+        padding-left: 4.0em
+    }
+
+
