@@ -1,0 +1,18 @@
+body {
+}
+
+.message_box_orange{
+    width: 1000px;
+    border: 0px solid orange;
+    padding: 5px;
+    margin: 10px;
+
+}
+
+.message_box_yellow {
+    width: 1000px;
+    border: 0px solid yellow;
+    padding: 5px;
+    margin: 10px
+
+}
