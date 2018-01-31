@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta title="main"/>
+        <link rel="stylesheet" type="text/css" href="./style1.css" />
+        <style type="text/css">
+            .sign_up {
+                float: right;
+                background-color: #4CAF50;
+                border: none;
+                color: white;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+            .back{
+                float: left;
+                background-color: #f44336;
+                border: none;
+                color: white;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration:none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 20px;
+                cursor: pointer;
+            }
+
+            /* Full-width input fields */
+            input[type=text], input[type=password] {
+                width: 100%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                display: inline-block;
+                border: none;
+                background: #f1f1f1;
+            }
+
+            input[type=text]:focus, input[type=password]:focus {
+                background-color: #ddd;
+                outline: none;
+            }
+
+            hr {
+                border: 1px solid #f1f1f1;
+                margin-bottom: 25px;
+            }
+
+            /* Set a style for all buttons */
+            button {
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                opacity: 0.9;
+            }
+
+            button:hover {
+                opacity:1;
+            }
+
+            /* Add padding to container elements */
+            .container {
+                padding: 10% 20%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="first line">
+            <h1 align="center" > Sign In
+                <a href="main.html", title ="back to main" class = back>Home</a>
+                <a href="sign_up.html", title ="to sign up page" class = sign_up>No account? Sign Up!</a>
+            </h1>
+        </div>      
+        <form class="container" action="/action_page.php">
+            <div class="container">
+                <label><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button onclick="location.href='cuisine.html';" type="submit">Login</button>
+            </div>
+    </form>
+        <div class="footer">
+            <a id="about_us" href="www.google.com"> About Us</a>
+            <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+            <a id="contact" href="..."> Contact</a>
+        </div>
+    </body>
+</html>
