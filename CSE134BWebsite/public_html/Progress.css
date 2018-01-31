@@ -1,18 +1,40 @@
 body {
 }
 
-.message_box_orange{
+.message_box_orange {
+    background-color: lightsalmon;      
     width: 1000px;
-    border: 0px solid orange;
-    padding: 5px;
-    margin: 10px;
-
-}
-
-.message_box_yellow {
-    width: 1000px;
-    border: 0px solid yellow;
+    border: 0px;
     padding: 5px;
     margin: 10px
 
 }
+
+.message_box_yellow {
+    background-color: MOCCASIN;
+    width: 1000px;
+    border: 0px solid yellow;
+    padding: 5px;
+    margin: 10px
+}
+
+.footer {
+    background-color: darkgray;
+    font-style: italic;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center
+}
+
+    .footer about_us {
+        color: blue;
+        text-align: left
+    }
+
+    .footer contact {
+        padding-left: 4.0em
+    }
+
+
