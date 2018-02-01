@@ -1,6 +1,20 @@
 ﻿body {
 }
 
+/* set default padding and margins */
+div, p, body, html {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 5px 5px;
+}
+
+#cartlogout {
+    float: right
+}
+
+#cartlogout > p {
+   display: inline-block
+}
+
 .restaurantName{
     color: darkred;
     font-size: 340%;
@@ -20,8 +34,8 @@
     margin-top: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
-    font-size: 250%;
-    font-style: oblique
+    font-size: 200%;
+    font-family:sans-serif;
 
 }
 
@@ -58,7 +72,6 @@
 .footer {
     background-color: darkgray;
     font-style: italic;
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
