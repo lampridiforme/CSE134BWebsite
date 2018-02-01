@@ -1,11 +1,27 @@
 ﻿body {
 }
 
+.restaurantName{
+    color: darkred;
+    font-size: 340%;
+    font-family: fantasy;
+}
 
-.menuHeading{
-    display:block;
-    font-size: 300%;
-    font-style: oblique;
+#tenderGreens {
+    color: yellowgreen;
+    font-size: 340%;
+    margin-bottom: 0px;
+    padding-top:0px;
+    padding-bottom:0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menuHeading {
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 250%;
+    font-style: oblique
 
 }
 
@@ -37,4 +53,25 @@
 .button{
     height:50px;
 }
+
+
+.footer {
+    background-color: darkgray;
+    font-style: italic;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center
+}
+
+    .footer about_us {
+        color: blue;
+        text-align: left
+    }
+
+    .footer contact {
+        padding-left: 4.0em
+    }
+
 
