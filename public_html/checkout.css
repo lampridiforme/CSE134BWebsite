@@ -1,0 +1,51 @@
+body {
+}
+
+/* set default padding and margins */
+div, p, body, html, form {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 5px 5px
+
+}
+
+#cartlogout {
+    padding-right: 5px;
+    float: right
+}
+
+#cartlogout > p {
+        display: inline-block
+}
+
+.page_heading{
+    font-size: 300%;
+}
+
+
+
+.block_heading{
+    font-size: 150%;
+    color: darkred;
+    margin-top:30px;
+}
+
+.footer {
+    background-color: darkgray;
+    font-style: italic;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center
+}
+
+.footer about_us {
+        color: blue;
+        text-align: left
+    }
+
+.footer contact {
+        padding-left: 4.0em
+    }
+
+

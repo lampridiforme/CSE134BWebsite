@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cart</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/cart.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div id="header">
+            <a href="./index.html">
+                <img src="" alt="Logo"/>
+            </a>
+            <div id="cartlogout">
+                <p>
+                    <a href="./cart.html">Cart (0)</a>
+                </p>
+                <p>
+                    <a href="./index.html">Log Out</a>
+                </p>
+            </div>
+        </div>
+        <div id="categoryHeading">
+            <!-- need to keep a variable to keep track of which webpage to go back to -->
+            <p id="back">
+                <a href="./restaurants.html">Back</a>
+            </p>
+            <p id="headingMessage">Cart:</p>
+        </div>
+        <div id="selections">
+            <div class="selection">
+                <div class="itemInfo">
+                    <img src="" alt="a picture of the product" />
+                    <p>Product</p>
+                </div>
+                <form action="/action_page.php">
+                    Quantity:
+                    <input type="number" name="quantity" min="0" max="99">
+                </form>
+                <div class="removeItem">
+                    X
+                </div>
+            </div>
+            <div class="selection">
+                <div class="itemInfo">
+                    <img src="" alt="a picture of the product" />
+                    <p>Product</p>
+                </div>
+                <form action="/action_page.php">
+                    Quantity:
+                    <input type="number" name="quantity" min="0" max="99">
+                </form>
+                <div class="removeItem">
+                    X
+                </div>
+            </div>
+            <div class="selection">
+                <div class="itemInfo">
+                    <img src="egg_tart.jpg" alt="a picture of the product"/>
+                    <p>Product</p>
+                </div>
+                <form action="/action_page.php">
+                    Quantity:
+                    <input type="number" name="quantity" min="0" max="99">
+                </form>
+                <div class="removeItem">
+                    X
+                </div>
+            </div>
+            <div class="selection">
+                <div class="itemInfo">
+                    <img src="" alt="a picture of the product" />
+                    <p>Product</p>
+                </div>
+                <form action="/action_page.php">
+                    Quantity:
+                    <input type="number" name="quantity" min="0" max="99">
+                </form>
+                <div class="removeItem">
+                    X
+                </div>
+            </div>
+        </div>
+        <div id="checkout">
+                <p>
+                    <a href="./checkout.html">Check Out</a>
+                </p>
+            </div>
+        <div id="footer">
+            <p>About Us</p>
+        </div>
+    </body>
+</html>
