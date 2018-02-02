@@ -1,0 +1,78 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 30, 2018, 4:26:36 PM
+    Author     : christinedai
+*/
+
+div,p,body,html {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    /* default font size and type */
+    font-size: 20px; 
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+}
+
+#header {
+    background-color: coral;
+    width: 100%;
+    display: inline-block;
+    height: 5vh;
+}
+
+#cartlogout {
+    background-color: blue;
+    float: right;
+}
+
+#cartlogout>p {
+    display: inline-block;
+}
+
+#categoryHeading {
+    height: 15vh;
+    background-color: gold;
+    word-wrap: break-word;
+}
+
+#footer {
+   width:100%;
+   background: red;
+   height: 5vh;
+}
+
+#selections {
+    background-color: lavender;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+}
+
+.selection {
+    background-color: orange;
+    height: 100%;
+}
+
+.selection>div, .selection>form {
+    display: inline-block;
+    margin-right: 2vw;
+}
+
+.itemInfo {
+    display: inline-block;
+}
+
+.itemInfo>img {
+    height: 5vh;
+}

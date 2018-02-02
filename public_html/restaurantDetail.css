@@ -1,0 +1,90 @@
+﻿body {
+}
+
+/* set default padding and margins */
+div, p, body, html {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 5px 5px;
+}
+
+#cartlogout {
+    float: right
+}
+
+#cartlogout > p {
+   display: inline-block
+}
+
+.restaurantName{
+    color: darkred;
+    font-size: 340%;
+    font-family: fantasy;
+}
+
+#tenderGreens {
+    color: yellowgreen;
+    font-size: 340%;
+    margin-bottom: 0px;
+    padding-top:0px;
+    padding-bottom:0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menuHeading {
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 200%;
+    font-family:sans-serif;
+
+}
+
+.selection{
+    display:block;
+}
+
+.itemInfo{
+    display:block;
+    font-size: 100%;
+    font-style: oblique;
+}
+
+.add_to_cart{
+    color:black;
+    font-size: 120%;
+    padding: 1.0em 1.0em;
+    text-align:center;
+    width: 150px;
+    height: 40px;
+
+}
+
+.food_image{
+    width:300px;
+    height:230px;
+}
+
+.button{
+    height:50px;
+}
+
+
+.footer {
+    background-color: darkgray;
+    font-style: italic;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center
+}
+
+    .footer about_us {
+        color: blue;
+        text-align: left
+    }
+
+    .footer contact {
+        padding-left: 4.0em
+    }
+
+
