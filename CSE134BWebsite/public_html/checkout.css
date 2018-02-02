@@ -17,6 +17,7 @@ div, p, body, html, form {
 }
 
 .page_heading{
+    display:block;
     font-size: 300%;
 }
 
@@ -70,7 +71,48 @@ div, p, body, html, form {
     margin-top:50px;
 }
 
+#cart{
+    float: left;
+    background-color: darkorange;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
 
+#log_out{
+    float: left;
+    background-color: darkred;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+/*
+#back{
+    float: left;
+
+    background-color: darkblue;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+*/
 
 .footer {
     background-color: darkgray;
