@@ -4,13 +4,13 @@ body {
 /* set default padding and margins */
 div, p, body, html, form {
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 5px 5px
+    margin: 0px 0px 5px 5px;
 
 }
 
 #cartlogout {
-    padding-right: 5px;
-    float: right
+    padding-right: 15px;
+    float: right;
 }
 
 #cartlogout > p {
@@ -21,13 +21,43 @@ div, p, body, html, form {
     font-size: 300%;
 }
 
-
-
 .block_heading{
     font-size: 150%;
     color: darkred;
     margin-top:30px;
 }
+
+.total{
+    background-color: lightgray;
+    float: right;
+    margin-right: 200px;
+    padding-top: 30px;
+    padding-bottom:30px;
+    padding-left:20px;
+    padding-right:20px;
+
+}
+
+#est.total{
+    font-size: 150%;
+}
+
+.submit {
+    float: left;
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-top:50px;
+}
+
+
 
 .footer {
     background-color: darkgray;

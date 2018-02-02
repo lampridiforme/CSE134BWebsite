@@ -7,12 +7,24 @@ div, p, body, html {
     margin: 0px 0px 5px 5px;
 }
 
+table {
+    border-collapse: separate;
+    border-spacing: 2px;
+    margin:auto;
+}
+
+td{
+    padding: 0 30px 0 30px;
+}
+
+
 #cartlogout {
-    float: right
+    padding-right: 15px;
+    float: right;
 }
 
 #cartlogout > p {
-   display: inline-block
+   display: inline-block;
 }
 
 .restaurantName{
@@ -49,13 +61,25 @@ div, p, body, html {
     font-style: oblique;
 }
 
-.add_to_cart{
-    color:black;
-    font-size: 120%;
-    padding: 1.0em 1.0em;
-    text-align:center;
-    width: 150px;
-    height: 40px;
+.amount{
+    text-align:left;
+}
+
+.button_orange {
+
+    background-color: orange;
+    width: 70%;
+
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
 
 }
 
