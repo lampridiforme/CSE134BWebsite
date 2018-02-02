@@ -24,7 +24,7 @@ td{
 }
 
 #cartlogout > p {
-   display: inline-block;
+    display: inline-block;
 }
 
 .restaurantName{
@@ -43,7 +43,7 @@ td{
 }
 
 .menuHeading {
-    margin-top: 0px;
+    margin-top: 25px;
     padding-top: 0px;
     padding-bottom: 0px;
     font-size: 200%;
@@ -79,19 +79,16 @@ td{
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-
-
 }
 
 .food_image{
     width:300px;
-    height:230px;
+    height:270px;
 }
 
 .button{
     height:50px;
 }
-
 
 .footer {
     background-color: darkgray;
@@ -102,13 +99,13 @@ td{
     text-align: center
 }
 
-    .footer about_us {
-        color: blue;
-        text-align: left
-    }
+.footer about_us {
+    color: blue;
+    text-align: left
+}
 
-    .footer contact {
-        padding-left: 4.0em
-    }
+.footer contact {
+    padding-left: 4.0em
+}
 
 
