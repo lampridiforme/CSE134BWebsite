@@ -8,17 +8,20 @@
     </head>
     <body>
         <div id="header">
-<a href="Main.html">Home</a>
+            <a href="./Main.html">
+                <img src="" alt="Logo" />
             </a>
+            <div id="cartlogout">
+                <p>
+                    <a href="./cart.html" id="cart">Cart (0)</a>
+                </p>
+                <p>
+                    <a href="./Main.html" id="log_out">Log Out</a>
+                </p>
+            </div>
         </div>
-        <div id="cartlogout">
-            <p>
-                <a href="./cart.html">Cart (0)</a>
-            </p>
-            <p>
-                <a href="./index.html">Log Out</a>
-            </p>
-        </div>
+
+
         <div id="categoryHeading">
             <!-- need to keep a variable to keep track of which webpage to go back to -->
             <p>
@@ -37,13 +40,12 @@
         </div>
 
         <!--table for selections (food items)-->
-        <table cellspacing="0" cellpadding="15">
+        <table cellspacing="0">
             <tr>
                 <th><img src="./edamame.jpg" alt="a picture of the product" width="300" height="230" /></th>
                 <th><img src="./garlic_cucumber.jpg" alt="a picture of the product" width="300" height="230"/></th>
                 <th><img src="./preserved_egg.jpg" alt="a picture of the product" width="300" height="230"/></th>
                 <th><img src="./house_salad.jpg" alt="a picture of the product" width="300" height="230"/></th>
-             
             </tr>
             <tr>
                 <td><b>Edamame</b></td>
@@ -58,10 +60,62 @@
                 <td>$6.99</td>
             </tr>
             <tr>
-                <td><button class="add_to_cart" >add to cart</button></td>
-                <td><button class="add_to_cart" >add to cart</button></td>
-                <td><button class="add_to_cart" >add to cart</button></td>
-                <td><button class="add_to_cart" >add to cart</button></td>
+                <td>
+                    <table cellspacing="0" cellpadding="0">
+                        <tr>
+                            <th>
+                                <form action="" class="amount">
+                                    Amount:<br />
+                                    <input type="text" name="amount" />
+                                    <br />
+                                </form>
+                            </th>
+                            <th><a class="button_orange">add to cart</a></th>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table cellspacing="0" cellpadding="0">
+                        <tr>
+                            <th>
+                                <form action="" class="amount">
+                                    Amount:<br />
+                                    <input type="text" name="amount" />
+                                    <br />
+                                </form>
+                            </th>
+                            <th><a class="button_orange">add to cart</a></th>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table cellspacing="0" cellpadding="0">
+                        <tr>
+                            <th>
+                                <form action="" class="amount">
+                                    Amount:<br />
+                                    <input type="text" name="amount" />
+                                    <br />
+                                </form>
+                            </th>
+                            <th><a class="button_orange">add to cart</a></th>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table cellspacing="0" cellpadding="0">
+                        <tr>
+                            <th>
+                                <form action="" class="amount">
+                                    Amount:<br />
+                                    <input type="text" name="amount" />
+                                    <br />
+                                </form>
+                            </th>
+                            <th><a class="button_orange">add to cart</a></th>
+                        </tr>
+                    </table>
+                </td>
             </tr>
         </table>
 
@@ -72,7 +126,7 @@
             </div>
         
         <!--table for selections (food items)-->
-        <table cellspacing="0" cellpadding="15">
+        <table cellspacing="0">
             <tr>
                 <th><img class ="food_image" src="./tomato.jpg" alt="a picture of the product" width="300" height="230" /></th>
                 <th><img class ="food_image" src="./potato.jpg" alt="a picture of the product" width="300" height="230" /></th>
@@ -93,14 +147,64 @@
                 <td>$18.99</td>
             </tr>
             <tr>
-                <td><button class="add_to_cart">add to cart</button></td>
-                <td><button class="add_to_cart">add to cart</button></td>
-                <td><button class="add_to_cart">add to cart</button></td>
-                <td><button class="add_to_cart">add to cart</button></td>
+                <td>
+                    <table class="subtable">
+                        <tr>
+                            <th>
+                                <form action="" class="amount">
+                                    Amount:<br />
+                                    <input type="text" name="amount" />
+                                    <br />
+                                </form>
+                            </th>
+                            <th><a class="button_orange">add to cart</a></th>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="subtable">
+                        <tr>
+                            <th>
+                                <form action="" class="amount">
+                                    Amount:<br />
+                                    <input type="text" name="amount" />
+                                    <br />
+                                </form>
+                            </th>
+                            <th><a class="button_orange">add to cart</a></th>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="subtable">
+                        <tr>
+                            <th>
+                                <form action="" class="amount">
+                                    Amount:<br />
+                                    <input type="text" name="amount" />
+                                    <br />
+                                </form>
+                            </th>
+                            <th><a class="button_orange">add to cart</a></th>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="subtable">
+                        <tr>
+                            <th>
+                                <form action="" class="amount">
+                                    Amount:<br />
+                                    <input type="text" name="amount" />
+                                    <br />
+                                </form>
+                            </th>
+                            <th><a class="button_orange">add to cart</a></th>
+                        </tr>
+                    </table>
+                </td>
             </tr>
         </table>
-
-
         </div>
 
         <div class="menuHeading">
@@ -110,7 +214,7 @@
         </div>
 
         <!--table for selections (food items)-->
-        <table cellspacing="0" cellpadding="15">
+        <table cellspacing="0">
             <tr>
                 <th><img src="./egg_tart.jpg" alt="a picture of the product" width="300" height="230" /></th>
 
@@ -124,7 +228,19 @@
 
             </tr>
             <tr>
-                <td><button onclick="location.href='./cart.html' " type="button" class="add_to_cart">add to cart</button></td>
+                <td>
+                    <table cellspacing="0" cellpadding="0">
+                        <tr>
+                            <th><form action="" class="amount">
+                            Amount:<br />
+                            <input type="text" name="amount" />
+                            <br />
+                            </form>
+                            </th>
+                            <th><a class="button_orange">add to cart</a></th>
+                        </tr>
+                    </table>
+                </td>
 
             </tr>
         </table>

@@ -1,81 +1,97 @@
 <!DOCTYPE html>
 <html>
     <head>
-<title>Cart</title>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <link rel="stylesheet" type="text/css" href="./css/cart.css" />
-         <style type="text/css">
-            body {
-                background-image: url("./main_bg.jpg");
+        <title>Cart</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./css/cart.css" />
+        <style>
+        .footer {
+    width: 100%;
+    height: 3vh;
+    background-color: #a9de25;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center
+}
+            .footer about_us {
+                color: blue;
+                text-align: left
             }
-        </style>
-      </head>
-      <body>
-           <div id="first line">
-             <h1 align="center"  style = "color : black"> Shopping Cart
-                 <a href="restaurants.html", title ="back" class = back>back</a>
-                 <a href="checkout.html", title ="to check out" class = sign_up> Check out</a>
-             </h1>
- 
-         </div> 
-         
-         <div class="big"> 
-         <div class="total">
-             <p> Subtotal: $17.00</p>
-             <p> Estimated Tax:$1.32</p>
-             <p> Delivery Fee:$5.00</p>
-             <p> </p>
-             <p id="est.total"> <b>Estimated Total:     $23.32</b></p>
-          </div>
-          <div class="container">
-              <div class="selection">
-                   <p style = "color : blue">Egg tart</p>
-                     <img src=./egg_tart.jpg width=20% alt="a picture of the product" />
-                 
-                 <div class = "quantity">
-                     <form style = "color : white" margin-left=10px action="/action_page.php">
-                          Quantity:
-                         <input type="number" name="quantity" mi n="0" max="99">
-                     </form>
-                     <div class="removeItem">
-                         <button onclick="" >remove  </button>
-                     </div>
-                  </div>
-                 <p class="e1" style = "color : blue" > Total Price is: 13.99$</p>    
- </div>
-  <div class="selection">
-                     <p style = "color : white" >Edamame</p>
-                     <img src=./edamame.jpg width=20% alt="a picture of the product" />
-                 
-                 <div class = "quantity">
-                     <form margin-left=10px action="/action_page.php">
-                         Quantity:
-                         <input type="number" name="quantity" mi n="0" max="99">
-                     </form>
-                     <div class="removeItem">
-                         <button onclick="" >remove  </button>
-                     </div>
-                  </div>
-                                  <p style = "color : white" class="e1"> Total Price is: 13.99$</p> 
-             </div>  
-              <div class="selection">
-                                   <p style = "color : white" >Tomato</p>
-                    <img src=./tomato.jpg width=20% alt="a picture of the product" />
+
+            .footer contact {
+                padding-left: 4.0em
+            }
+            </style>
+    </head>
+    <body>
+        <div id="first line">
+            <h1 align="center" > Shopping Cart
+                <a href="restaurants.html", title ="back" class = back>back</a>
+
+                <a href="checkout.html", title ="to check out" class = sign_up> Check out</a>
+            </h1>
+        </div> 
+        
+        <div class="big"> 
+        <div class="total">
+            <p> Subtotal: $17.00</p>
+            <p> Estimated Tax:$1.32</p>
+            <p> Delivery Fee:$5.00</p>
+            <p> </p>
+            <p id="est.total"> <b>Estimated Total:     $23.32</b></p>
+        </div>
+        <div class="container">
+            <div class="selection">
+                    <p >Egg tart</p>
+                    <img src=./egg_tart.jpg width=20% alt="a picture of the product" />
                 
                 <div class = "quantity">
-                    <form  style = "color : white" margin-left=10px action="/action_page.php">
+                    <form margin-left=10px action="/action_page.php">
                         Quantity:
                         <input type="number" name="quantity" mi n="0" max="99">
                     </form>
                     <div class="removeItem">
                         <button onclick="" >remove  </button>
                     </div>
-                  </div>
+                </div>
+                <p class="e1"> Total Price is: 13.99$</p>    
+            </div>
+             <div class="selection">
+                    <p >Edamame</p>
+                    <img src=./edamame.jpg width=20% alt="a picture of the product" />
+                
+                <div class = "quantity">
+                    <form margin-left=10px action="/action_page.php">
+                        Quantity:
+                        <input type="number" name="quantity" mi n="0" max="99">
+                    </form>
+                    <div class="removeItem">
+                        <button onclick="" >remove  </button>
+                    </div>
+                </div>
+                <p class="e1"> Total Price is: 13.99$</p> 
+            </div>  
+            <div class="selection">
+                    <p >Tomato</p>
+                    <img src=./tomato.jpg width=20% alt="a picture of the product" />
+                
+                <div class = "quantity">
+                    <form margin-left=10px action="/action_page.php">
+                        Quantity:
+                        <input type="number" name="quantity" mi n="0" max="99">
+                    </form>
+                    <div class="removeItem">
+                        <button onclick="" >remove  </button>
+                    </div>
+
+                </div>
                 <p class="e1"> Total Price is:13.99$ </p> 
-              </div>
-              <div class="selection">
-                                   <p >kungpao_chicken</p>
+            </div>
+            <div class="selection">
+                    <p >kungpao_chicken</p>
+
                     <img src=./kungpao_chicken.jpg width=20% alt="a picture of the product" />
                 
                 <div class = "quantity">
@@ -86,16 +102,19 @@
                     <div class="removeItem">
                         <button onclick="" >remove  </button>
                     </div>
-                  </div>
-                <p class="e1"> Total Price is:13.99$</p>  
-              </div>
 
-          </div>
-             </div>
+                </div>
+                <p class="e1"> Total Price is:13.99$</p>  
+            </div>
+
+        </div>
+    </div>
         <div class="footer">
             <a id="about_us" href="www.google.com"> About Us</a>
             <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
             <a id="contact" href="..."> Contact</a>
         </div>  
-      </body>
-  </html>
+
+    </body>
+</html>
+
