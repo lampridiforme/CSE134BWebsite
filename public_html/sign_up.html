@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8" />
-        <meta title="main"/>
-        <link rel="stylesheet" type="text/css" href="./style1.css" />
-        <style type="text/css">
+        <meta charset="UTF-8">
+        <title> Sign Up</title>
+        <link rel="stylesheet" href="./style1.css" />
+        <style >
             body {
                 background-image: url("./main_bg.jpg");
             }
@@ -103,17 +103,27 @@
                 }
             }
 
+            h1{
+                text-align: center;
+            }
+            
+            p.already{
+                font-size: 1em;
+                margin-top: 0px;
+                float: right;
+
+            }
         </style>
     </head>
     <body>
-        <div id="first line">
-            <h1 align="center" > Sign Up
-                <a href="main.html", title ="back to main" class = back>Home</a>
-                <a href="sign_in.html", title ="to sign in page" class = sign_in>Log In</a>
+        <div id="first_line">
+            <h1 > Sign Up
+                <a href="main.html" title ="back to main" class = back>Home</a>
+                <a href="sign_in.html" title ="to sign in page" class = sign_in>Log In</a>
             </h1>
         </div>
-        <p font size = "-2", align = "right"> Already have an account? </p>
-        <form class="modal-content" action="\action.page.php">
+        <p class="already"> Already have an account? </p>
+        <form class="modal-content" action="/action.page.php">
         
         <div class="container">
           <p style = "color : black" >Please fill in this form to create an account.</p>
@@ -141,7 +151,7 @@
         </form>
         <div class="footer">
             <a id="about_us" href="www.google.com"> About Us</a>
-            <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
             <a id="contact" href="..."> Contact</a>
         </div>
     </body>
