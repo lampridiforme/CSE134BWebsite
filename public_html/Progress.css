@@ -50,6 +50,11 @@ body {
     cursor: pointer;
 }
 
+.img{
+    display:block;
+    height:300px;
+}
+
 .send_msg{
     width:1000px;
     height:40px;

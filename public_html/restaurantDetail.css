@@ -2,8 +2,8 @@
 
 /* set default padding and margins */
 p, body, html {
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
 }
 
 #cartlogout {
@@ -17,7 +17,7 @@ p, body, html {
     border-bottom-color: #a9de25;
     width: 100%;
     display: inline-block;
-    height: 10vh;
+    height: 63px;
     min-height: 24px
 }
 
@@ -27,7 +27,7 @@ p, body, html {
 
 #cart {
     float: left;
-    background-color: darkorange;
+    background-color: #FF8C00;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -36,12 +36,13 @@ p, body, html {
     display: block;
     font-size: 16px;
     margin: 4px 2px;
-    cursor: pointer;
+    cursor: pointer
+
 }
 
 #log_out {
     float: left;
-    background-color: darkred;
+    background-color: #8B0000;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -50,7 +51,7 @@ p, body, html {
     display: block;
     font-size: 16px;
     margin: 4px 2px;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .selections {
@@ -73,12 +74,13 @@ p, body, html {
     display: inline-block;
 }
 
-.restaurantName{
-    margin-left:15px;
-    margin-right:15px;
-    color: darkred;
+.restaurantName {
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #8B0000;
     font-size: 340%;
-    font-family: fantasy;
+    font-family: fantasy
+
 }
 
 #tenderGreens {
@@ -86,9 +88,9 @@ p, body, html {
     margin-right: 5px;
     color: green;
     font-size: 340%;
-    margin-bottom: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 
 }
@@ -97,8 +99,8 @@ p, body, html {
     margin-top: 25px;
     margin-left: 15px;
     margin-right: 15px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
     font-size: 200%;
     font-family: sans-serif
 
@@ -138,10 +140,10 @@ p, body, html {
 .footer {
     display: block;
 
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
     width: 100%;
-    height: 3vh;
+    height: 20px;
     background-color: #a9de25;
     margin-top: 50px;
     left: 0;
@@ -177,8 +179,8 @@ p, body, html {
     } 
 
     .footer{
-        margin-left:0px;
-        margin-right:0px;
+        margin-left:0;
+        margin-right:0;
         padding:0 0 0 0;
 
     }

@@ -1,27 +1,26 @@
-body {
-}
+
 
 /* set default padding and margins */
 body{
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
 }
 
-#header {
+.header {
     border-bottom-style:dashed;
     border-bottom-color: #a9de25;
     width: 100%;
     display: inline-block;
-    height: 10vh;
+    height: 60px;
     min-height: 24px
 }
 
-#cartlogout {
+.cartlogout {
     padding-right: 15px;
     float: right;
 }
 
-#cartlogout > p {
+.cartlogout > p {
     display: inline-block
 }
 
@@ -32,52 +31,52 @@ body{
     font-size: 300%
 }
 
-#address {
+.address {
     margin-left: 20px;
     margin-right: 20px
 }
 
 .block_heading {
     font-size: 150%;
-    color: darkred;
+    color: #8B0000;
     margin-top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 20px
+
 }
 
-#add_header {
+.add_header {
     margin-left: 20px;
     margin-right: 20px;
 }
 
 
-#delivery_address {
-    padding: 0px 100px 20px 20px;
+.delivery_address {
+    padding: 0 100px 20px 20px;
     width: 800px;
     border-style: none none solid none;
     border-width: 2px;
-    border-color: lightgray
-
+    border-color: #DCDCDC;
 }
 
-#paymentInfo {
+.paymentInfo {
     margin-left: 20px;
     margin-right: 20px;
     /*padding: 20px 20px 10px 10px; */
-    padding: 0px 100px 20px 20px;
+    padding: 0 100px 20px 20px;
     width: 800px
 }
 
-.total{
-    background-color: lightgray;
+.total {
+    background-color: #DCDCDC;
     float: right;
     margin-right: 200px;
     padding-top: 30px;
-    padding-bottom:30px;
-    padding-left:20px;
-    padding-right:20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px
 }
 
-#est.total{
+.est.total{
     font-size: 150%;
 }
 
@@ -98,9 +97,10 @@ body{
 
 }
 
-#cart{
+.cart {
     float: left;
-    background-color: darkorange;
+    background-color: #ff8c00;
+    margin-bottom: 10px;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -108,13 +108,14 @@ body{
     text-decoration: none;
     display: block;
     font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+
+    cursor: pointer
 }
 
-#log_out{
+.log_out {
     float: left;
-    background-color: darkred;
+    margin-bottom:10px;
+    background-color: #8B0000;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -122,15 +123,16 @@ body{
     text-decoration: none;
     display: block;
     font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+
+    cursor: pointer
+
 }
 
 
 
 .footer {
         width:100%;
-        height: 3vh;
+        height: 20px;
         background-color: #a9de25;      
         position:fixed;
         left:0;
@@ -149,20 +151,21 @@ body{
 }
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
     .total {
-        width:20%;
-        background-color: lightgray;
+        width: 20%;
+        background-color: #DCDCDC;
         display: inline-block;
-        float:left;
+        float: left;
         margin-left: 200px;
         padding-top: 30px;
         padding-bottom: 30px;
         padding-left: 20px;
-        padding-right: 20px;
+        padding-right: 20px
     }
 
-    #paymentInfo {
-        display: inline-block;
+    .paymentInfo {
+        display: inline-block
+
     }
 }
