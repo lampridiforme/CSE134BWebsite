@@ -62,7 +62,6 @@ body {
  .total{
      position: absolute;
      background-color: lightgray;
-     margin-right:;
      margin-left: 75%;
      padding-top: 30px;
      padding-bottom:30px;
@@ -73,3 +72,29 @@ body {
  }
 
 
+/* approximately phone sized */
+@media only screen and (max-width: 750px) {
+    #first——line {
+        font-size: 60%;
+
+    }
+
+    .big{
+
+        width:90%;
+        display:block;
+    }
+
+    .total {
+        display: block;
+        width: 20%;
+        margin-top:100px;
+        margin-left: 350px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 10px;
+        padding-right: 10px
+
+    }
+
+}
