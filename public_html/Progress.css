@@ -18,10 +18,9 @@ body {
     min-height: 24px
 }
 
-
-    #cartlogout > p {
-        display: inline-block
-    }
+#cartlogout > p {
+    display: inline-block
+}
 
 #log_out {
     float: left;
@@ -59,7 +58,7 @@ body {
 
 .message_box_orange {
     background-color: #F4D03F;
-    width: 1000px;
+    max-width: 1000px;
     border: 0px;
     padding: 5px;
     margin-bottom:5px;
@@ -68,7 +67,7 @@ body {
 
 .message_box_yellow {
     background-color: #F9E79F;
-    width: 1000px;
+    max-width: 1000px;
     padding: 5px;
     margin-bottom: 5px;
 
@@ -94,3 +93,19 @@ body {
     .footer contact {
         padding-left: 4.0em
     }
+
+@media only screen and (max-width: 700px) {
+
+    .message_box_orange {
+        max-width: 450px;
+        margin-right: 50px;
+    }
+
+    .message_box_yellow {
+        max-width: 450px;
+        margin-right: 50px;
+
+    }
+
+
+}

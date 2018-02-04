@@ -9,9 +9,7 @@ body{
 
 #header {
     border-bottom-style:dashed;
-
     border-bottom-color: #a9de25;
-    /*background-color: #a9de25;*/
     width: 100%;
     display: inline-block;
     height: 10vh;
@@ -128,21 +126,7 @@ body{
     cursor: pointer;
 }
 
-/*
-#back{
-float: left;
 
-background-color: darkblue;
-border: none;
-color: white;
-padding: 10px 20px;
-text-align: center;
-text-decoration: none;
-display: block;
-font-size: 16px;
-margin: 4px 2px;
-}
- */
 
 .footer {
         width:100%;
@@ -165,3 +149,20 @@ margin: 4px 2px;
 }
 
 
+@media only screen and (max-width: 700px) {
+    .total {
+        width:20%;
+        background-color: lightgray;
+        display: inline-block;
+        float:left;
+        margin-left: 200px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #paymentInfo {
+        display: inline-block;
+    }
+}

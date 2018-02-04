@@ -23,7 +23,7 @@ div, p, body, html {
 }
 
 #cartlogout > p {
-    display: inline-block
+    display: inline-block;
 }
 
 #cart {
@@ -37,7 +37,7 @@ div, p, body, html {
     display: block;
     font-size: 16px;
     margin: 4px 2px;
-    cursor: pointer
+    cursor: pointer;
 }
 
 #log_out {
@@ -51,23 +51,37 @@ div, p, body, html {
     display: block;
     font-size: 16px;
     margin: 4px 2px;
-    cursor: pointer
+    cursor: pointer;
+}
+
+.table {
+    display: table;
+
+    width: 100%;
+
+    max-width: 350px;
+    min-width: 200px;
+    min-height:20px;
 
 }
 
-
-
-table {
-    border-collapse: separate;
-    border-spacing: 2px;
-    margin:auto;
-
+.t_row{
+    display:table-row;
 }
 
-td{
-    padding: 0 30px 0 30px;
+.t_head{
+    display:table-row;
 }
 
+.t_cell {
+    display: table-cell;
+
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left:3px;
+    padding-right:30px;
+
+}
 
 #cartlogout {
     padding-right: 15px;
@@ -119,7 +133,7 @@ td{
 .button_orange {
 
     background-color: orange;
-    width: 70%;
+    width: 80%;
 
     border: none;
     color: white;
@@ -161,3 +175,35 @@ td{
     }
 
 
+/* approximately phone sized */
+@media only screen and (max-width: 750px) {
+    #tenderGreens {
+        font-size: 125px
+    }
+
+    .restaurantName {
+        font-size: 40px;
+    }
+
+    .menuHeading{
+        margin-top:5px;
+        margin-bottom:5px;
+        font-size:30px;
+        
+    } 
+
+    .table {
+        display: block;
+        width: 25%;
+
+    }
+
+    t_cell {
+        width: 75%;
+        display: block;
+        margin: 5px 5px 5px 5px;
+        padding: 0px 0px 0px 0px;
+    }
+
+
+}
