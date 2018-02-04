@@ -1,21 +1,23 @@
-body {
-    background-image: url("./main_bg.jpg");
+﻿body {
+
+
 }
+
+
 
 .bg-container{
     position:relative;
     overflow:hidden;
-    height:20vh;
+    height:800px;
     left: 0px;
-    background: rgba(255, 255, 255, 0.6);
-    padding-top: 5vh;
-    padding-left: 5vh;
 }
 
 .bg-container form {
     z-index:2;
     font-size: 200%;
+
     position:relative;
+    top:50%;
 }
 
 .bg-container img{
@@ -25,27 +27,29 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
+    //background-image: url("./main_bg.jpg");
     opacity: 0.6;
 }
 
-.footer{
-    background-color: darkgray;
-    font-style:italic;
-    position:fixed;
-    left:0;
-    bottom:0;
-    width:100%;
-    text-align: center;
+.footer {
+    width: 100%;
+    height: 3vh;
+    background-color: #a9de25;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center
 }
 
-.footer about_us{
-    color:blue;
-    text-align:left;
-}
+    .footer about_us {
+        color: blue;
+        text-align: left
+    }
 
-.footer contact{
-    padding-left: 4.0em;
-}
+    .footer contact {
+        padding-left: 4.0em
+    }
+
 
 .button{
     background-color: #4CAF50;

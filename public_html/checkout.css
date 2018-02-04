@@ -2,50 +2,166 @@ body {
 }
 
 /* set default padding and margins */
-div, p, body, html, form {
+body{
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 5px 5px
+    margin: 0px 0px 0px 0px;
+}
 
+#header {
+    border-bottom-style:dashed;
+
+    border-bottom-color: #a9de25;
+    /*background-color: #a9de25;*/
+    width: 100%;
+    display: inline-block;
+    height: 10vh;
+    min-height: 24px
 }
 
 #cartlogout {
-    padding-right: 5px;
-    float: right
+    padding-right: 15px;
+    float: right;
 }
 
 #cartlogout > p {
-        display: inline-block
+    display: inline-block
 }
 
-.page_heading{
-    font-size: 300%;
+.page_heading {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: block;
+    font-size: 300%
 }
 
+#address {
+    margin-left: 20px;
+    margin-right: 20px
+}
 
-
-.block_heading{
+.block_heading {
     font-size: 150%;
     color: darkred;
-    margin-top:30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
+#add_header {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+#delivery_address {
+    padding: 0px 100px 20px 20px;
+    width: 800px;
+    border-style: none none solid none;
+    border-width: 2px;
+    border-color: lightgray
+
+}
+
+#paymentInfo {
+    margin-left: 20px;
+    margin-right: 20px;
+    /*padding: 20px 20px 10px 10px; */
+    padding: 0px 100px 20px 20px;
+    width: 800px
+}
+
+.total{
+    background-color: lightgray;
+    float: right;
+    margin-right: 200px;
+    padding-top: 30px;
+    padding-bottom:30px;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+#est.total{
+    font-size: 150%;
+}
+
+.submit {
+
+    float: left;
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left:10px;
+    margin-bottom:30px;
+
+}
+
+#cart{
+    float: left;
+    background-color: darkorange;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#log_out{
+    float: left;
+    background-color: darkred;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/*
+#back{
+float: left;
+
+background-color: darkblue;
+border: none;
+color: white;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: block;
+font-size: 16px;
+margin: 4px 2px;
+}
+ */
+
 .footer {
-    background-color: darkgray;
-    font-style: italic;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center
+        width:100%;
+        height: 3vh;
+        background-color: #a9de25;      
+        position:fixed;
+        left:0;
+        bottom:0;
+        text-align: center
+
 }
 
 .footer about_us {
-        color: blue;
-        text-align: left
-    }
+    color: blue;
+    text-align: left
+}
 
 .footer contact {
-        padding-left: 4.0em
-    }
+    padding-left: 4.0em
+}
 
 
