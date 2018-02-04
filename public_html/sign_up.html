@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8" />
-        <meta title="main"/>
-        <link rel="stylesheet" type="text/css" href="./style1.css" />
-        <style type="text/css">
+        <meta charset="UTF-8">
+        <title> Sign Up</title>
+        <link rel="stylesheet" href="./style1.css" />
+        <style >
+            body {
+                background-image: url("./main_bg.jpg");
+            }
             .sign_in {
                 float: right;
                 background-color: #4CAF50;
@@ -31,6 +34,8 @@
                 margin: 4px 20px;
                 cursor: pointer;
             }
+
+            
 
             /* Full-width input fields */
             input[type=text], input[type=password] {
@@ -99,35 +104,46 @@
                    width: 100%;
                 }
             }
+
+            h1{
+                text-align: center;
+            }
+            
+            p.already{
+                font-size: 1em;
+                margin-top: 0px;
+                float: right;
+
+            }
         </style>
     </head>
     <body>
-        <div id="first line">
-            <h1 align="center" > Sign Up
-                <a href="main.html", title ="back to main" class = back>Home</a>
-                <a href="sign_in.html", title ="to sign in page" class = sign_in>Log In</a>
+        <div id="first_line">
+            <h1 > Sign Up
+                <a href="main.html" title ="back to main" class = back>Home</a>
+                <a href="sign_in.html" title ="to sign in page" class = sign_in>Log In</a>
             </h1>
         </div>
-        <p font size = "-2", align = "right"> Already have an account? </p>
-        <form class="modal-content" action="\action.page.php">
+        <p class="already"> Already have an account? </p>
+        <form class="modal-content" action="/action.page.php">
         
         <div class="container">
-          <p>Please fill in this form to create an account.</p>
+          <p style = "color : black" >Please fill in this form to create an account.</p>
           <hr>
-          <label><b>Email</b></label>
+          <label style = "color : white" ><b>Email</b></label>
           <input type="text" placeholder="Enter Email" name="email" required>
 
-          <label><b>Password</b></label>
+          <label style = "color : white" ><b>Password</b></label>
           <input type="password" placeholder="Enter Password" name="psw" required>
 
-          <label><b>Repeat Password</b></label>
+          <label style = "color : white" ><b>Repeat Password</b></label>
           <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
           
-          <label>
+          <label style = "color : gray" >
             <input type="checkbox" checked="checked" style="margin-bottom:15px"> Remember me
           </label>
 
-          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+          <p style = "color : gray" >By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
           <div class="clearfix">
             <button type="button" onclick="location.href='Main.html';" class="cancelbtn">Cancel</button>
@@ -137,7 +153,7 @@
         </form>
         <div class="footer">
             <a id="about_us" href="www.google.com"> About Us</a>
-            <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
             <a id="contact" href="..."> Contact</a>
         </div>
     </body>

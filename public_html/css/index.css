@@ -1,4 +1,35 @@
-﻿
+
+p, div, form, body, head, h1 {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+body {
+    background-image: url("../main_bg.jpg");
+    background-repeat: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+form {
+    padding: 2vh 1vh 5vh 1vh;
+    background-color: #a9de25;
+    background: linear-gradient(to left, rgba(255,0,0,0), rgba(169,222,37,1));
+}
+
+input {
+    font-size: 30px;
+}
+
+#formheader {
+    font-size: 40px;
+    margin-bottom: 2vh;
+}
+
+.first_line {
+    background-color: #a9de25;
+    padding: 1vh 1vh 2vh 1vh;
+}
+
 .bg-container{
     position:relative;
     overflow:hidden;
@@ -9,9 +40,8 @@
 .bg-container form {
     z-index:2;
     font-size: 200%;
-
-    position:relative;
     top:50%;
+    margin-top: 5vh;
 }
 
 .bg-container img{
@@ -20,9 +50,6 @@
     left: 0px;
     width: 100%;
     height: 100%;
-    z-index: -1;
-    //background-image: url("./main_bg.jpg");
-    opacity: 0.6;
 }
 
 .footer {
@@ -54,21 +81,9 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 4px 2px 0px 0px;
     cursor: pointer;
-}
-
-.button{
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+    transform: translateY(-5px);
 }
 
 .login {
@@ -97,3 +112,37 @@
     margin: 4px 20px;
     cursor: pointer;
 }
+
+/* approximately phone sized */
+@media only screen and (max-width: 450px) {
+    .button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px 0px 0px;
+        cursor: pointer;
+        transform: translateY(0px);
+        width: 200px;
+    }
+
+    form {
+        padding: 2vh 1vh 5vh 1vh;
+        background-color: #a9de25;
+        background: linear-gradient(to top, rgba(255,0,0,0), rgba(169,222,37,1));
+        text-align: center;
+        height: 50vh;
+    }
+
+    input {
+
+    }
+}
+
+
+
+

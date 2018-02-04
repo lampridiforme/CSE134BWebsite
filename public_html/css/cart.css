@@ -7,72 +7,69 @@ and open the template in the editor.
     Created on : Jan 30, 2018, 4:26:36 PM
     Author     : christinedai
 */
-
-div,p,body,html {
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
-    /* default font size and type */
-    font-size: 20px; 
-    font-family: 'Ubuntu', sans-serif;
-}
-
-html {
-    width: 100%;
-}
-
 body {
-    width: 100%;
+    background-image: url("./main_bg.jpg");
 }
+ .sign_up {
+     float: right;
+     background-color: #4CAF50;
+     border: none;
+     color: white;
+     padding: 10px 50px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     margin: 4px 2px;
+     cursor: pointer;
+ }
+ .back{
+     float: left;
+     background-color: #f44336;
+     border: none;
+     color: white;
+     padding: 10px 50px;
+     text-align: center;
+     text-decoration:none;
+     display: inline-block;
+     font-size: 16px;
+     margin: 4px 20px;
+     cursor: pointer;
+ }
+             /* Add padding to container elements */
+ .container {    
+     display: inline-block;
+     border: 1px solid black;
+     margin-left: 15%;
+     margin-right:25%;
+ }
+ .selection{
+     margin-top: 10px;
+     border: 1px solid lightblue;   
+     margin-left: 20px;
+     margin-bottom: 10px;
+ }
+ .quantity{
+     float: right;
+     margin-right: 10%;
+ }
+ p.e1{
+     margin-top: 0px;    
+ }
+ .removeItem{
+     margin-top: 100px;   
+ }
+ .total{
+     position: absolute;
+     background-color: lightgray;
+     margin-right:;
+     margin-left: 75%;
+     padding-top: 30px;
+     padding-bottom:30px;
+     padding-left:30px;
+     padding-right:20px;
+ }
+ .big{
+ }
 
-#header {
-    background-color: coral;
-    width: 100%;
-    display: inline-block;
-    height: 5vh;
-}
 
-#cartlogout {
-    background-color: blue;
-    float: right;
-}
-
-#cartlogout>p {
-    display: inline-block;
-}
-
-#categoryHeading {
-    height: 15vh;
-    background-color: gold;
-    word-wrap: break-word;
-}
-
-#footer {
-   width:100%;
-   background: red;
-   height: 5vh;
-}
-
-#selections {
-    background-color: lavender;
-    width: 100%;
-    text-align: center;
-    height: 100%;
-}
-
-.selection {
-    background-color: orange;
-    height: 100%;
-}
-
-.selection>div, .selection>form {
-    display: inline-block;
-    margin-right: 2vw;
-}
-
-.itemInfo {
-    display: inline-block;
-}
-
-.itemInfo>img {
-    height: 5vh;
-}

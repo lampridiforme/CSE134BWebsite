@@ -6,33 +6,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/restaurants.css" rel="stylesheet" type="text/css"/>
         <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Seaweed+Script" rel="stylesheet">
     </head>
+    <style type="text/css">
+    </style>
     <body>
         <div id="header">
             <a href="./Main.html">
-                <img src="" alt="Logo"/>
+                <!--<img src="" alt="Logo"/>-->
+                <b style="font-family: 'Seaweed Script', cursive; font-size: 30px">Delivery</b>
             </a>
             <div id="cartlogout">
                 <p>
-                    <a href="./cart.html">Cart (0)</a>
+                    <a href="./cart.html" id="cart">Cart (0)</a>
                 </p>
                 <p>
-                    <a href="./index.html">Log Out</a>
+                    <a href="./Main.html" id="log_out">Log Out</a>
                 </p>
             </div>
         </div>
+
         <div id="categoryHeading">
             <p id="back">
                 <a href="./cuisine.html">Back</a>
             </p>
-            <p id="headingMessage">(Insert cuisine here) Restaurants:</p>
+            <p id="headingMessage">Restaurants:</p>
         </div>
         <div id="selections">
             <div class="wrapper">
                 <div class="selection">
                     <div class="itemInfo">
                         <a href="./restaurantDetail.html">
-                            <img src="" alt="a picture of the restaurant" />
+                            <img src="./img/gelatin_steakhouse.jpg" alt="a picture of the restaurant" />
                         </a>
                         <a href="./restaurantDetail.html">
                             <p>Bizzare China</p>
@@ -42,7 +47,7 @@
                 <div class="selection">
                     <div class="itemInfo">
                         <a href="./restaurant_B.html">
-                            <img src="" alt="a picture of the restaurant" />
+                            <img src="./img/gelatin_steakhouse.jpg" alt="a picture of the restaurant" />
                         </a>
                         <a href="./restaurant_B.html">
                             <p>Tender Greens</p>
@@ -51,7 +56,7 @@
                 <div class="selection">
                     <div class="itemInfo">
                         <a href="./restaurant_B.html">
-                            <img src="" alt="a picture of the restaurant" />
+                            <img src="./img/gelatin_steakhouse.jpg" alt="a picture of the restaurant" />
                         </a>
                         <a href="./restaurant_B.html">
                             <p>Restaurant C</p>
@@ -61,7 +66,7 @@
                 <div class="selection">
                     <div class="itemInfo">
                         <a href="./restaurant_B.html">
-                            <img src="" alt="a picture of the restaurant" />
+                            <img src="./img/gelatin_steakhouse.jpg" alt="a picture of the restaurant" />
                         </a>
                         <a href="./restaurant_B.html">
                             <p>Restaurant D</p>
@@ -71,7 +76,7 @@
                             <div class="selection">
                     <div class="itemInfo">
                         <a href="./restaurantDetail.html">
-                            <img src="" alt="a picture of the restaurant" />
+                            <img src="./img/gelatin_steakhouse.jpg" alt="a picture of the restaurant" />
                         </a>
                         <a href="./restaurantDetail.html">
                             <p>Restaurant E</p>
@@ -81,7 +86,7 @@
                 <div class="selection">
                     <div class="itemInfo">
                         <a href="./restaurantDetail.html">
-                            <img src="" alt="a picture of the restaurant" />
+                            <img src="./img/gelatin_steakhouse.jpg" alt="a picture of the restaurant" />
                         </a>
                         <a href="./restaurantDetail.html">
                             <p>Restaurant F</p>
@@ -90,7 +95,7 @@
                 <div class="selection">
                     <div class="itemInfo">
                         <a href="./restaurantDetail.html">
-                            <img src="" alt="a picture of the restaurant" />
+                            <img src="./img/gelatin_steakhouse.jpg" alt="a picture of the restaurant" />
                         </a>
                         <a href="./restaurantDetail.html">
                             <p>Restaurant G</p>
@@ -100,7 +105,7 @@
                 <div class="selection">
                     <div class="itemInfo">
                         <a href="./restaurantDetail.html">
-                            <img src="" alt="a picture of the restaurant" />
+                            <img src="./img/gelatin_steakhouse.jpg" alt="a picture of the restaurant" />
                         </a>
                         <a href="./restaurantDetail.html">
                             <p>Restaurant H</p>
@@ -117,8 +122,10 @@
                 </p>
             </div>
         </div>
-        <div id="footer">
-            <p>About Us</p>
+        <div class="footer">
+            <a id="about_us" href="www.google.com"> About Us</a>
+            <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+            <a id="contact" href="..."> Contact</a>
         </div>
     </body>
 </html>
