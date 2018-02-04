@@ -1,10 +1,9 @@
-﻿body {
-}
+﻿
 
 /* set default padding and margins */
-div, p, body, html {
+p, body, html {
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 5px 5px;
+    margin: 0px 0px 0px 0px;
 }
 
 #cartlogout {
@@ -54,33 +53,15 @@ div, p, body, html {
     cursor: pointer;
 }
 
-.table {
-    display: table;
-
-    width: 100%;
-
-    max-width: 350px;
-    min-width: 200px;
-    min-height:20px;
+.selections {
+    margin-left: 5px;
+    margin-right: 5px;
 
 }
-
-.t_row{
-    display:table-row;
-}
-
-.t_head{
-    display:table-row;
-}
-
-.t_cell {
-    display: table-cell;
-
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-left:3px;
-    padding-right:30px;
-
+.selection{
+    display:inline-block;
+    margin-left:20px;
+    margin-right:20px;
 }
 
 #cartlogout {
@@ -93,54 +74,53 @@ div, p, body, html {
 }
 
 .restaurantName{
+    margin-left:15px;
+    margin-right:15px;
     color: darkred;
     font-size: 340%;
     font-family: fantasy;
 }
 
 #tenderGreens {
+    margin-left: 5px;
+    margin-right: 5px;
     color: green;
     font-size: 340%;
     margin-bottom: 0px;
-    padding-top:0px;
-    padding-bottom:0px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
 }
 
 .menuHeading {
     margin-top: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
     padding-top: 0px;
     padding-bottom: 0px;
     font-size: 200%;
-    font-family:sans-serif;
+    font-family: sans-serif
 
 }
 
-.selection{
-    display:block;
-}
-
-.itemInfo{
-    display:block;
-    font-size: 100%;
-    font-style: oblique;
-}
 
 .amount{
     text-align:left;
+    display:inline-block;
 }
 
 .button_orange {
 
     background-color: orange;
-    width: 80%;
+    width: 30%;
 
     border: none;
     color: white;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-    display: block;
+    display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
@@ -156,10 +136,14 @@ div, p, body, html {
 }
 
 .footer {
+    display: block;
+
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     width: 100%;
     height: 3vh;
     background-color: #a9de25;
-    margin-top:50px;
+    margin-top: 50px;
     left: 0;
     bottom: 0;
     text-align: center
@@ -178,7 +162,7 @@ div, p, body, html {
 /* approximately phone sized */
 @media only screen and (max-width: 750px) {
     #tenderGreens {
-        font-size: 125px
+        font-size: 40px;
     }
 
     .restaurantName {
@@ -192,18 +176,13 @@ div, p, body, html {
         
     } 
 
-    .table {
-        display: block;
-        width: 25%;
+    .footer{
+        margin-left:0px;
+        margin-right:0px;
+        padding:0 0 0 0;
 
     }
 
-    t_cell {
-        width: 75%;
-        display: block;
-        margin: 5px 5px 5px 5px;
-        padding: 0px 0px 0px 0px;
-    }
 
 
 }
