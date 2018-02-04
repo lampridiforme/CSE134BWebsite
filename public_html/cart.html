@@ -4,87 +4,157 @@
         <title>Cart</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./style1.css" />
+        <style type="text/css">
+            .sign_up {
+                float: right;
+                background-color: #4CAF50;
+                border: none;
+                color: white;
+                padding: 10px 50px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+            .back{
+                float: left;
+                background-color: #f44336;
+                border: none;
+                color: white;
+                padding: 10px 50px;
+                text-align: center;
+                text-decoration:none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 20px;
+                cursor: pointer;
+            }
+                        /* Add padding to container elements */
+            .container {    
+                display: inline-block;
+                border: 1px solid black;
+                margin-left: 15%;
+                margin-right:25%;
+            }
+            .selection{
+                margin-top: 10px;
+                border: 1px solid lightblue;   
+                margin-left: 20px;
+                margin-bottom: 10px;
+            }
+            .quantity{
+                float: right;
+                margin-right: 10%;
+            }
+            p.e1{
+                margin-top: 0px;    
+            }
+            .removeItem{
+                margin-top: 100px;   
+            }
+            .total{
+                position: absolute;
+                background-color: lightgray;
+                margin-right:;
+                margin-left: 75%;
+                padding-top: 30px;
+                padding-bottom:30px;
+                padding-left:30px;
+                padding-right:20px;
+            }
+            .big{
+            }
+            </style>
     </head>
     <body>
-        <div id="header">
-            <a href="./index.html">
-                <img src="" alt="Logo"/>
-            </a>
-            <p>
-                <a href="./cart.html">Cart (0)</a>
-            </p>
-            <p>
-                <a href="./index.html">Log Out</a>
-            </p>
+        <div id="first line">
+            <h1 align="center" > Shopping Cart
+                <a href="restaurants.html", title ="back" class = back>back</a>
+
+                <a href="checkout.html", title ="to check out" class = sign_up> Check out</a>
+            </h1>
+
+        </div> 
+        
+        <div class="big"> 
+        <div class="total">
+            <p> Subtotal: $17.00</p>
+            <p> Estimated Tax:$1.32</p>
+            <p> Delivery Fee:$5.00</p>
+            <p> </p>
+            <p id="est.total"> <b>Estimated Total:     $23.32</b></p>
         </div>
-        <div id="categoryHeading">
-            <!-- need to keep a variable to keep track of which webpage to go back to -->
-            <p>
-                <a href="./restaurants.html">Back</a>
-            </p>
-            <p>Cart:</p>
+        <div class="container">
+            <div class="selection">
+                    <p >Egg tart</p>
+                    <img src=./egg_tart.jpg width=20% alt="a picture of the product" />
+                
+                <div class = "quantity">
+                    <form margin-left=10px action="/action_page.php">
+                        Quantity:
+                        <input type="number" name="quantity" mi n="0" max="99">
+                    </form>
+                    <div class="removeItem">
+                        <button onclick="" >remove  </button>
+                    </div>
+                </div>
+                <p class="e1"> Total Price is: 13.99$</p>    
+            </div>
+             <div class="selection">
+                    <p >Edamame</p>
+                    <img src=./edamame.jpg width=20% alt="a picture of the product" />
+                
+                <div class = "quantity">
+                    <form margin-left=10px action="/action_page.php">
+                        Quantity:
+                        <input type="number" name="quantity" mi n="0" max="99">
+                    </form>
+                    <div class="removeItem">
+                        <button onclick="" >remove  </button>
+                    </div>
+                </div>
+                <p class="e1"> Total Price is: 13.99$</p> 
+            </div>  
+            <div class="selection">
+                    <p >Tomato</p>
+                    <img src=./tomato.jpg width=20% alt="a picture of the product" />
+                
+                <div class = "quantity">
+                    <form margin-left=10px action="/action_page.php">
+                        Quantity:
+                        <input type="number" name="quantity" mi n="0" max="99">
+                    </form>
+                    <div class="removeItem">
+                        <button onclick="" >remove  </button>
+                    </div>
+                </div>
+                <p class="e1"> Total Price is:13.99$ </p> 
+            </div>
+            <div class="selection">
+                    <p >kungpao_chicken</p>
+                    <img src=./kungpao_chicken.jpg width=20% alt="a picture of the product" />
+                
+                <div class = "quantity">
+                    <form margin-left=10px action="/action_page.php">
+                        Quantity:
+                        <input type="number" name="quantity" mi n="0" max="99">
+                    </form>
+                    <div class="removeItem">
+                        <button onclick="" >remove  </button>
+                    </div>
+                </div>
+                <p class="e1"> Total Price is:13.99$</p>  
+            </div>
+
         </div>
-        <div id="selections">
-            <div class="selection">
-                <div class="itemInfo">
-                    <img src="" alt="a picture of the product" />
-                    <p>Product</p>
-                </div>
-                <form action="/action_page.php">
-                    Quantity:
-                    <input type="number" name="quantity" min="0" max="99">
-                </form>
-                <div class="removeItem">
-                    X
-                </div>
-            </div>
-            <div class="selection">
-                <div class="itemInfo">
-                    <img src="" alt="a picture of the product" />
-                    <p>Product</p>
-                </div>
-                <form action="/action_page.php">
-                    Quantity:
-                    <input type="number" name="quantity" min="0" max="99">
-                </form>
-                <div class="removeItem">
-                    X
-                </div>
-            </div>
-            <div class="selection">
-                <div class="itemInfo">
-                    <img src="" alt="a picture of the product" />
-                    <p>Product</p>
-                </div>
-                <form action="/action_page.php">
-                    Quantity:
-                    <input type="number" name="quantity" min="0" max="99">
-                </form>
-                <div class="removeItem">
-                    X
-                </div>
-            </div>
-            <div class="selection">
-                <div class="itemInfo">
-                    <img src="" alt="a picture of the product" />
-                    <p>Product</p>
-                </div>
-                <form action="/action_page.php">
-                    Quantity:
-                    <input type="number" name="quantity" min="0" max="99">
-                </form>
-                <div class="removeItem">
-                    X
-                </div>
-            </div>
-        </div>
-        <div id="checkout">
-                <p>
-                    <a href="./checkout.html">Check Out</a>
-                </p>
-            </div>
-        <div id="footer">
-            <p>About Us</p>
-        </div>
+    </div>
+        <div class="footer">
+            <a id="about_us" href="www.google.com"> About Us</a>
+            <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+            <a id="contact" href="..."> Contact</a>
+        </div>  
     </body>
 </html>
