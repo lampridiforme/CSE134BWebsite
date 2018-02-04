@@ -113,6 +113,36 @@ input {
     cursor: pointer;
 }
 
+/* approximately phone sized */
+@media only screen and (max-width: 450px) {
+    .button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px 0px 0px;
+        cursor: pointer;
+        transform: translateY(0px);
+        width: 200px;
+    }
+
+    form {
+        padding: 2vh 1vh 5vh 1vh;
+        background-color: #a9de25;
+        background: linear-gradient(to top, rgba(255,0,0,0), rgba(169,222,37,1));
+        text-align: center;
+        height: 50vh;
+    }
+
+    input {
+
+    }
+}
+
 
 
 
