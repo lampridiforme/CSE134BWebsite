@@ -7,33 +7,13 @@
         <link rel="stylesheet" type="text/css" href="./css/cart.css" />
         <script src="./js/cart.js"></script>
         <style>
-        .footer {
-            width: 100%;
-            height: 3vh;
-            background-color: #a9de25;
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            text-align: center
-        }
-        .footer about_us {
-            color: blue;
-            text-align: left
-        }
-        .footer contact {
-            padding-left: 4.0em
-        }
-        h1{
-            text-align: center;
-        }
-        img{width: 20%}
         </style>
     </head>
     <body>
-        <div id="first——line">
-
+        <div id="first_line">
+             <h1>
                 <a href="restaurants.html" title ="back" class = back>back</a>
-                <h1>
+               
                     Shopping Cart
                     <span>
                         <a href="checkout.html" title="to check out" class=sign_up> Check out</a>
@@ -42,7 +22,6 @@
                 
         </div> 
         
-        <div class="big"> 
         <div class="total">
             <p> Subtotal: $17.00</p>
             <p> Estimated Tax:$1.32</p>
@@ -50,6 +29,7 @@
             <p> </p>
             <p id="est.total"> <b>Estimated Total:     $23.32</b></p>
         </div>
+        
         <div class="container">
             <div class="selection" id = "egg">
                     <p >Egg tart</p>
@@ -61,7 +41,7 @@
                         <input type="number" name="quantity" min="0" max="99">
                     </form>
                     <div class="removeItem" >
-                        <button onclick="remove('egg')">remove  </button>
+                        <button onclick="remove(this)">remove  </button>
                     </div>
                 </div>
                 <p class="e1"> Total Price is: 13.99$</p>    
@@ -76,7 +56,7 @@
                         <input type="number" name="quantity" min="0" max="99">
                     </form>
                     <div class="removeItem">
-                        <button onclick="remove('eda')" >remove  </button>
+                        <button onclick="remove(this)" >remove  </button>
                     </div>
                 </div>
                 <p class="e1"> Total Price is: 13.99$</p> 
@@ -91,7 +71,7 @@
                         <input type="number" name="quantity" min="0" max="99">
                     </form>
                     <div class="removeItem">
-                        <button onclick="remove('tomato')" >remove  </button>
+                        <button onclick="remove(this)" >remove  </button>
                     </div>
 
                 </div>
@@ -108,20 +88,18 @@
                         <input type="number" name="quantity" min="0" max="99">
                     </form>
                     <div class="removeItem">
-                        <button onclick="remove('chick')" >remove  </button>
+                        <button onclick="remove(this)" >remove  </button>
                     </div>
 
                 </div>
                 <p class="e1"> Total Price is:13.99$</p>  
             </div>
-
         </div>
-    </div>
         <div class="footer">
-            <a id="about_us" href="www.google.com"> About Us</a>
+            <a id="about_us" href="https://www.google.com"> About Us</a>
             <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-            <a id="contact" href="..."> Contact</a>
-        </div>  
+            <a id="contact" href="https://www.google.com"> Contact</a>
+        </div>
 
     </body>
 </html>
