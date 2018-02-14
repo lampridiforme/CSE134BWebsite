@@ -40,7 +40,7 @@ function displayRestaurantElemHard() {
 	// create a div to hold the new restauruant info
 	let rDiv = document.createElement("div");
 	// html content for the div
-	let info = "<div class='itemInfo'> <a href='./restauruantDetail.html'> <img src='./img/gelatin_steakhouse.jpg' alt='a picture of the restauruant'> </a> <a href='./restauruantDetail.html'> <p>Gelatin's Steakhouse</p> </a> </div>";
+	let info = "<div class='itemInfo'> <a href='./restaurantDetail.html'> <img src='./img/gelatin_steakhouse.jpg' alt='a picture of the restauruant'> </a> <a href='./restauruantDetail.html'> <p>Gelatin's Steakhouse</p> </a> </div>";
 
 	rDiv.innerHTML = info;
 
