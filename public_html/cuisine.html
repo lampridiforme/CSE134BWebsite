@@ -6,6 +6,47 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/cuisine.css" rel="stylesheet" type="text/css"/>
         <link href="https://fonts.googleapis.com/css?family=Seaweed+Script" rel="stylesheet">
+        <script> 
+            let glowBox = (function () {
+                let glowing = false; // Private Variable
+
+                let pub = {};// public object - returned at end of module
+
+                pub.toggle = function () {
+                    console.log("Currently " + glowing);
+                    if(glowing === true) {
+                        console.log("Was true, set to false");
+                        glowing = false;
+                    }
+                    else {
+                        console.log("Was false, set to true");
+                        glowing = true;
+                    }
+                };
+
+                pub.isGlowing = function() {
+                    return glowing;
+                }
+
+                return pub; // expose externally
+            }());
+
+            // theres GOT to be a more efficient way to do this than put
+            // onclick handlers everywhere
+            function glow(elem) {
+                // switch states
+                glowBox.toggle();
+
+                // if its true, then set css to make it look like box is glowing
+                if(glowBox.isGlowing() === true) {
+                    this.setAttribute("style", "text-shadow: 0 0 3px #FF0000;");
+                }
+                // otherwise turn off
+                else {
+                    this.removeAttribute("style"); 
+                }
+            }
+        </script>
     </head>
 
     <body>
@@ -30,15 +71,13 @@
         </div>
         <div id="selections">
             <div class="wrapper">
-                <div class="selection">
+                <div class="selection" onclick="glow(this)">
                     <div class="itemInfo">
                         <a href="restaurants.html">
                             <img src="img/whitecake.svg" alt="a delicious cake"/>
                         </a>
                         <a href="restaurants.html">
-
                             <p>American</p>
-
                         </a>
                     </div>
                 </div>
