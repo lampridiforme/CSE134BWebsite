@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./restaurantDetail.css" />
+    <script src = "./js/main.js"></script>
+    <script src = "./js/cart.js"></script>
+    <script src = "./js/restaurantDetail.js"></script>
 </head>
 <body>
     <div id="header">
@@ -12,9 +15,9 @@
                 <b style="font-family: 'Seaweed Script', cursive; font-size: 30px">Delivery</b>      
         </a>
         <div id="cartlogout">
-            <p>
-                <a href="./cart.html" id="cart">Cart (0)</a>
-            </p>
+                <script>
+                    showCartNum();
+                </script>
             <p>
                 <a href="./Main.html" id="log_out">Log Out</a>
             </p>
@@ -47,7 +50,8 @@
                         <input type="text" name="amount" />
                         <br />
                     </form>
-                    <a class="button_orange">add to cart</a>
+                    <button onclick="addToCart('edamame', 4.00, './edamame.jpg')"
+                        class="button_orange" > add to cart </button>
                 </div>
             </div>
             <div class="selection">
@@ -60,9 +64,11 @@
                         <input type="text" name="amount" />
                         <br />
                     </form>
-                    <a class="button_orange">add to cart</a>
+                    <button onclick="addToCart('Garlic Cucumber', 4.99, './garlic_cucumber.jpg')"
+                        class="button_orange" > add to cart </button>
                 </div>
             </div>
+
             <div class="selection">
                 <div class="itemInfo">
                     <img class="food_image" src="./preserved_egg.jpg" alt="a picture of the product" width="300" height="230" />
@@ -73,7 +79,8 @@
                         <input type="text" name="amount" />
                         <br />
                     </form>
-                    <a class="button_orange">add to cart</a>
+                    <button onclick="addToCart('preserved_egg', 3.50, 'preserved_egg.jpg')"
+                        class="button_orange" > add to cart </button>
                 </div>
             </div>
             <div class="selection">
@@ -86,7 +93,8 @@
                         <input type="text" name="amount" />
                         <br />
                     </form>
-                    <a class="button_orange">add to cart</a>
+                    <button onclick="addToCart('house_salad', 6.50, 'house_salad.jpg')"
+                        class="button_orange" > add to cart </button>
                 </div>
             </div>
         </div>
@@ -109,7 +117,8 @@
                         <input type="text" name="amount" />
                         <br />
                     </form>
-                    <a class="button_orange">add to cart</a>
+                    <button onclick="addToCart('马铃薯炒土豆', 8.99, 'potato.jpg')"
+                        class="button_orange" > add to cart </button>
                 </div>
             </div>
             <div class="selection">
@@ -122,7 +131,8 @@
                         <input type="text" name="amount" />
                         <br />
                     </form>
-                    <a class="button_orange">add to cart</a>
+                    <button onclick="addToCart('kungpao_chicken', 12.50, 'kungpao_chicken.jpg')"
+                        class="button_orange" > add to cart </button>
                 </div>
             </div>
 
@@ -136,7 +146,8 @@
                         <input type="text" name="amount" />
                         <br />
                     </form>
-                    <a class="button_orange">add to cart</a>
+                    <button onclick="addToCart('boiling_fish', 18.99, 'boiling_fish.png')"
+                        class="button_orange" > add to cart </button>
                 </div>
             </div>
 
@@ -160,7 +171,8 @@
                         <input type="text" name="amount" />
                         <br />
                     </form>
-                    <a class="button_orange">add to cart</a>
+                    <button onclick="addToCart('egg_tart', 4.49, 'egg_tart.jpg')"
+                        class="button_orange" > add to cart </button>
                 </div>
             </div>
         </div>

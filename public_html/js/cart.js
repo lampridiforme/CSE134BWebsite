@@ -3,8 +3,9 @@ function remove(e, index){
 	var price = list[index].price;
 	updateTotal(-price);
 	e.parentNode.parentNode.parentNode.style.display='none';
-
 	list.splice(index, 1);
+	//update the local storage
+	localStorage.setItem("cartNumber", localStorage.getItem("cartNumber")-1);
 }
 
 function createTotal (newprice){
@@ -54,7 +55,6 @@ function updateTotal( price){
 	document.getElementById("estTotal").innerHTML = tot;
 }
 
-var list = [];
 
 function dish(name, price, img, index){
 	this.name = name;
