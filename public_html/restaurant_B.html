@@ -16,10 +16,9 @@
         </a>
 
         <div id="cartlogout">
-            <p>
-                <a href="./cart.html" id="cart">Cart (0)</a>
-            </p>
-            <p>
+                <script >
+                    showCartNum();
+                </script>
                 <a href="./Main.html" id="log_out">Log Out</a>
             </p>
         </div>
@@ -67,9 +66,8 @@
                         <input type="text" name="amount" />
                         <br />
                     </form>
-                    <button onclick="addToCart('BGrilled Chicken Cobb Salad', 13.75, 'https://raster-static.postmates.com/?url=http%3A%2F%2Fcom.postmates.img.prod.s3.amazonaws.com%2Fad668337-fe64-473f-82c3-cb1404425e52%2Forig.jpg&amp;quality=90&amp;w=0&amp;h=640&amp;mode=auto&amp;v=4" alt="a picture of the product')"
-                        class="button_orange" > add to cart 
-                    </button>
+                    <button onclick= "addToCart('BGrilled Chicken Cobb Salad', 13.75, 'https://raster-static.postmates.com/?url=http%3A%2F%2Fcom.postmates.img.prod.s3.amazonaws.com%2Fad668337-fe64-473f-82c3-cb1404425e52%2Forig.jpg&amp;quality=90&amp;w=0&amp;h=640&amp;mode=auto&amp;v=4')"
+                        class="button_orange" > add to cart </button>
                 </div>
             </div>
 
