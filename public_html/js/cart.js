@@ -1,9 +1,12 @@
+// get the list from localstorage first
+let l = localStorage.getItem("list");
+
 function remove(e, index){
 	
-	var price = list[index].price;
+	var price = l[index].price;
 	updateTotal(-price);
 	e.parentNode.parentNode.parentNode.style.display='none';
-	list.splice(index, 1);
+	l.splice(index, 1);
 	//update the local storage
 	localStorage.setItem("cartNumber", localStorage.getItem("cartNumber")-1);
 }
@@ -133,16 +136,16 @@ function addElement(name, price, img){
 	document.getElementById("myUL").appendChild(li);
 
 	updateTotal(price);
-	list.push(new dish(name, price, img, index++));
+	l.push(new dish(name, price, img, index++));
 
 }
 
 
 function showCart(){
 	var i=0;
-	var number = list.length;
+	var number = l.length;
 	for (i=0;i<number;i++){
-		addElement(list[i].name, list[i].price, list[i].img);
+		addElement(l[i].name, l[i].price, l[i].img);
 	}
 }
 
