@@ -14,6 +14,7 @@ function addToCart(name, price, img){
 function updateCartNum(){
 	var number = localStorage.getItem("cartNumber");
 	number++;
+	alert(number);
 	var newcart = "Cart (" + number + ")"
 	document.getElementById("cart").innerHTML = newcart;
 	console.log("setting localstorage to new cart value");
