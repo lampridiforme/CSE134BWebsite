@@ -7,6 +7,7 @@
         <link href="css/restaurants.css" rel="stylesheet" type="text/css"/>
         <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Seaweed+Script" rel="stylesheet">
+        <script type="text/javascript" src="./js/restaurants.js"></script>
     </head>
 
 
@@ -33,7 +34,7 @@
             <p id="headingMessage">Restaurants:</p>
         </div>
         <div id="selections">
-            <div class="wrapper">
+            <div class="wrapper" id="rWrapper">
                 <div class="selection">
                     <div class="itemInfo">
                         <a href="./restaurantDetail.html">
@@ -115,10 +116,11 @@
             </div>
         </div>
         <!-- infinite scroll? down arrow button? -->
-        <div class="nextWrapper">
+        <div class="nextWrapper" onclick="displayRestaurantsHard()" style="cursor: pointer;">
             <div class="nextbutton">
                 <p>
-                    <a href="">&darr;</a>
+                    <!--<a href="">&darr;</a>-->
+                    &darr;
                 </p>
             </div>
         </div>
