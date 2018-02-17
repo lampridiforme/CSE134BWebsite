@@ -1,30 +1,34 @@
 //TODO 
 // the local storage does not work!
-let list = [];
-//localStorage.setItem("cartNumber", 0);
+//let list = [];
+//sessionStorage.setItem("cartNumber", 0);
 
 function addToCart(name, price, img){
-	console.log('Added to Cart!');
-	//var storedNames = JSON.parse(localStorage.getItem("names"));
+	var list = JSON.parse(sessionStorage.getItem("list"));
+	if (list==null){
+		list = [];
+	}
 	list.push(new dish (name, price, img));
-	localStorage.setItem("list", list);
+	sessionStorage.setItem("list", JSON.stringify(list));
 	updateCartNum();
 }
 
 function updateCartNum(){
-	var number = localStorage.getItem("cartNumber");
+	var number = sessionStorage.getItem("cartNumber");-
 	number++;
-	alert(number);
 	var newcart = "Cart (" + number + ")"
 	document.getElementById("cart").innerHTML = newcart;
-	console.log("setting localstorage to new cart value");
-	localStorage.setItem("cartNumber", number);
-	console.log("localstore is now " + localStorage.getItem("cartNumber"));
+	console.log("setting sessionStorage to new cart value");
+	sessionStorage.setItem("cartNumber", number);
+	console.log("localstore is now " + sessionStorage.getItem("cartNumber"));
 }
 
 
 function showCartNum(){
-	var number = localStorage.getItem("cartNumber");
+	var number = sessionStorage.getItem("cartNumber");
+	if (number==null){
+		number=0;
+	}
 	console.log("on load, number is " + number);
 	var para = document.getElementById("cartlogout");
 	var a = document.createElement("A");

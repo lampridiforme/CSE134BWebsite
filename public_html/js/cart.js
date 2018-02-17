@@ -1,5 +1,6 @@
-// get the list from localstorage first
-let l = localStorage.getItem("list");
+// get the list from sessionStorage first
+let list = sessionStorage.getItem("list");
+var l = JSON.parse(sessionStorage.getItem("list"));
 
 function remove(e, index){
 	
@@ -8,7 +9,7 @@ function remove(e, index){
 	e.parentNode.parentNode.parentNode.style.display='none';
 	l.splice(index, 1);
 	//update the local storage
-	localStorage.setItem("cartNumber", localStorage.getItem("cartNumber")-1);
+	sessionStorage.setItem("cartNumber", sessionStorage.getItem("cartNumber")-1);
 }
 
 function createTotal (newprice){
