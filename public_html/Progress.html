@@ -5,12 +5,12 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="./Progress.css" />
-        <script type="text/javascript" src="./js/Progress.js"></script>
+        <script src="./js/Progress.js"></script>
     </head>
     <body>
         <div id="header">
             <a href="./Main.html">
-                <img src=".." alt="Logo" />
+                <b style="font-family: 'Seaweed Script', cursive; font-size: 30px">Delivery</b>
             </a>
 
             <div id="cartlogout">
@@ -33,11 +33,21 @@
         <!-- messages-->
         <div class="send_msg">
             
-            <form action="post" id="new_msg">             Leave a note:<br />             <input type="text" name="note" class="textbox" id="textarea"/> <button class="button" onclick="send()">Send</button>             <br />         </form>
-            
-            
-            
+                <p>Leave a note: </p>
+            <span><textarea class="textbox" id=textarea></textarea></span>
+
+            <!--
+            <form action="post" id="new_msg">             Leave a note:<br />             <input type="text" name="note" class="textbox" id="textarea"/>
+                <br />
+                </form>
+                -->
+
+            <button class="button" onclick="send()">Send</button>
         </div>
+
+
+
+
         <div id="msg_boxes">
 
             <div id="1">

@@ -54,9 +54,10 @@ div.message_box:hover {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    margin:4px 2px;
     font-size: 16px;
     font-family:'Times New Roman', Times, serif;
-    margin: 4px 2px;
+
     cursor: pointer;
 }
 
@@ -85,13 +86,17 @@ div.message_box:hover {
     width:1000px;
     height:40px;
     margin-bottom:50px;
+    display:block;
 }
 
-.textbox{
-    height:30px;
-    width:700px;
-    font-size:14px;
-    margin-right:10px;
+.textbox {
+    height: 30px;
+    width: 700px;
+    font-size: 14px;
+    margin-right: 10px;
+    margin-bottom:0px;
+    display:inline-block;
+
 }
 
 .message_box_orange {
@@ -101,6 +106,7 @@ div.message_box:hover {
     border: 0;
     padding: 5px;
     margin-bottom: 5px;
+    margin-top:5px;
     display: inline-block
 
 }
@@ -119,7 +125,8 @@ div.message_box:hover {
     display: inline-block;
     border: 0;
     padding: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 5px
+
 }
 
 
