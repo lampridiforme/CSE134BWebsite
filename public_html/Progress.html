@@ -1,59 +1,59 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Progress</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./Progress.css" />
-</head>
-<body>
-    <div id="header">
-        <a href="./Main.html">
-            <img src=".." alt="Logo" />
-        </a>
+    <head>
+        <title>Progress</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./Progress.css" />
+        <script type="text/javascript" src="./js/Progress.js"></script>
+    </head>
+    <body>
+        <div id="header">
+            <a href="./Main.html">
+                <img src=".." alt="Logo" />
+            </a>
 
-        <div id="cartlogout">
-            <p>
+            <div id="cartlogout">
+                <p>
                 <a id="log_out" href="./Main.html">Log Out</a>
-            </p>
+                </p>
+            </div>
+            
         </div>
+        <div id="Page_header">
+            <h1>Progress</h1>
+        </div>
+        <div class="loading_animation">
+            <img src="./progress_animation.gif" class="img" alt="progress_animation"/>
+        </div>
+        <div class="status">
+            <h1>Order received ------- Picking up ------- Out for delivery ------- Delivered </h1>
+        </div>
+        
+        <!-- messages-->
+        <div class="send_msg">
+            
+            <form action="post" id="new_msg">             Leave a note:<br />             <input type="text" name="note" class="textbox" id="textarea"/> <button class="button" onclick="send()">Send</button>             <br />         </form>
+            
+            
+            
+        </div>
+        <div id="msg_boxes">
 
-    </div>
-    <div id="Page_header">
-        <h1>Progress</h1>
-    </div>
-    <div class="loading_animation">
-        <img src="./progress_animation.gif" class="img" alt="progress_animation"/>
-    </div>
-    <div class="status">
-        <h1>Order received ------- Picking up ------- Out for delivery ------- Delivered </h1>
-    </div>
-
-    <!-- messages-->
-    <div class="send_msg">
-        <form action="post" id="new_msg">
-            Leave a note:<br />
-            <input type="text" name="note" />
-            <a href="?.html" class="button">Send</a>
-            <br />
-        </form>
-    </div>
-    <div class="message_box_orange">
-        <span> No Garlic                ------Customer</span>
-    </div>
-    <div class="message_box_yellow">
-        <span> Out of Spinach            ------Restaurant</span>
-    </div>
-
-
-
-
-    <div class="footer">
-        <a id="about_us" href="www.google.com"> About Us</a>
-
-        <a id="contact" href="..."> Contact</a>
-    </div>
-</body>
+            <div id="1">
+                <div class="message_box_yellow" id="msg_box2">
+                    <span id="msg2"> Out of Spinach            ------Restaurant</span>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="footer">
+            <a id="about_us" href="www.google.com"> About Us</a>
+            
+            <a id="contact" href="..."> Contact</a>
+        </div>
+    </body>
 </html>
 
 

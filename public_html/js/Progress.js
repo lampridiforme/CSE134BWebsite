@@ -5,11 +5,10 @@ var num_msg = 2;
 var last_box = block1;
 
 
-var block1 = document.getElementById("block1");
+var block1 = document.getElementById("1");
 
-var block2 = document.getElementById("block2");
 msgs.push(block1);
-msgs.push(block2);
+
 
 function send(){
     var msg = document.getElementById("textarea").value;
@@ -39,7 +38,6 @@ function send(){
     else{
         box.style.backgroundColor = '#DAF7A6'; 
     }
-
     var bg_color = box.style.backgroundColor;
 
     block.appendChild(box);
@@ -47,11 +45,18 @@ function send(){
     var textnode = document.createTextNode(msg + "    --------Customer");
     box.appendChild(textnode);
 
-    var block1 = document.getElementById("block1");
+    var block1 = document.getElementById("1");
     if(num_msg==2) last_box = block1;
 
     var msg_boxes = document.getElementById("msg_boxes");
+  /*  var b = msgs.pop();
+    msg_boxes.insertBefore(block,b);
+    msgs.push(b);
+
+
     msg_boxes.insertBefore(block,last_box);
+    */
+    msg_boxes.insertBefore(block,msg_boxes.firstChild);
 
     num_msg++;
     index++;
@@ -65,9 +70,15 @@ function remove(id){
     //var b= document.getElementById(id);
 
     //var block = msgs.pop();
-    var index = parseInt(id);
+    var i = parseInt(id);
     var msg_boxes = document.getElementById("msg_boxes");
     var child = document.getElementById(id);
     msg_boxes.removeChild(child);
-    num_msg--;
+    if(child==last_box){
+        last_box = child.nextSibling;
+    }
+    msgs.splice(i,1);
+
+
+    index--;
 }
