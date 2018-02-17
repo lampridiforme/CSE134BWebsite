@@ -81,19 +81,17 @@ body{
 }
 
 .submit {
-
     float: left;
     background-color: green;
     border: none;
     color: white;
-    padding: 10px 20px;
+    font-size: 16px;
+    padding: 0px 10px;
     text-align: center;
     text-decoration: none;
     display: block;
-    font-size: 16px;
     cursor: pointer;
-    margin-left:10px;
-    margin-bottom:30px;
+    margin-left: 20px
 
 }
 
@@ -124,7 +122,7 @@ body{
     display: block;
     font-size: 16px;
 
-    cursor: pointer
+    cursor: pointer;
 
 }
 

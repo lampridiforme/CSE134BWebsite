@@ -3,10 +3,6 @@ body {
     padding: 0 0 0 0;
 }
 
-div.message_box_orange:hover {
-    background-color: lightgoldenrodyellow;
-}
-
 div.message_box_yellow:hover {
     background-color: lightgoldenrodyellow;
 
@@ -112,7 +108,6 @@ div.message_box:hover {
 .message_box_yellow {
     background-color: #F9E79F;
     display: inline-block;
-
     width:700px;
     padding: 5px;
     margin-bottom: 15px;
@@ -124,7 +119,7 @@ div.message_box:hover {
     display: inline-block;
     border: 0;
     padding: 5px;
-    margin-bottom: 5px
+    margin-bottom: 5px;
 }
 
 

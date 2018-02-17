@@ -115,16 +115,16 @@ p, body, html {
 .button_orange {
 
     background-color: orange;
-    width: 30%;
-
+    width: 40%;
     border: none;
     color: white;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
+
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 6px 8px;
     cursor: pointer;
 }
 
