@@ -5,8 +5,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="./css/cart.css" />
-        <script src="./js/cart.js"></script>
+        <script src = "./js/main.js"></script>
+        <script src="./js/cart.js">
+
+        </script>
         <style>
+            ul li {
+                list-style-type: none;
+            }
         </style>
     </head>
     <body>
@@ -21,79 +27,22 @@
             </h1>
                 
         </div> 
-        
-        <div class="total">
-            <p> Subtotal: $17.00</p>
-            <p> Estimated Tax:$1.32</p>
-            <p> Delivery Fee:$5.00</p>
-            <p> </p>
-            <p id="est.total"> <b>Estimated Total:     $23.32</b></p>
+
+        <div class="total" id="total">
+
+            <script>
+                createTotal(0);
+            </script>
         </div>
-        
+
         <div class="container">
-            <div class="selection" id = "egg">
-                    <p >Egg tart</p>
-                    <img src=./egg_tart.jpg  alt="a picture of the product" />
-                
-                <div class = "quantity">
-                    <form action="/action_page.php">
-                        Quantity:
-                        <input type="number" name="quantity" min="0" max="99">
-                    </form>
-                    <div class="removeItem" >
-                        <button onclick="remove(this)">remove  </button>
-                    </div>
-                </div>
-                <p class="e1"> Total Price is: 13.99$</p>    
-            </div>
-             <div class="selection" id = "eda">
-                    <p >Edamame</p>
-                    <img src=./edamame.jpg alt="a picture of the product" />
-                
-                <div class = "quantity">
-                    <form action="/action_page.php">
-                        Quantity:
-                        <input type="number" name="quantity" min="0" max="99">
-                    </form>
-                    <div class="removeItem">
-                        <button onclick="remove(this)" >remove  </button>
-                    </div>
-                </div>
-                <p class="e1"> Total Price is: 13.99$</p> 
-            </div>  
-            <div class="selection" id = "tomato">
-                    <p >Tomato</p>
-                    <img src=./tomato.jpg alt="a picture of the product" />
-                
-                <div class = "quantity">
-                    <form action="/action_page.php">
-                        Quantity:
-                        <input type="number" name="quantity" min="0" max="99">
-                    </form>
-                    <div class="removeItem">
-                        <button onclick="remove(this)" >remove  </button>
-                    </div>
+            <ul id = "myUL">
+                <script>
 
-                </div>
-                <p class="e1"> Total Price is:13.99$ </p> 
-            </div>
-            <div class="selection" id = "chick">
-                    <p >kungpao_chicken</p>
-
-                    <img src=./kungpao_chicken.jpg alt="a picture of the product" />
-                
-                <div class = "quantity">
-                    <form action="/action_page.php">
-                        Quantity:
-                        <input type="number" name="quantity" min="0" max="99">
-                    </form>
-                    <div class="removeItem">
-                        <button onclick="remove(this)" >remove  </button>
-                    </div>
-
-                </div>
-                <p class="e1"> Total Price is:13.99$</p>  
-            </div>
+                    showCart();
+                    //Add more dishes to test
+                </script>
+            </ul>
         </div>
         <div class="footer">
             <a id="about_us" href="https://www.google.com"> About Us</a>
