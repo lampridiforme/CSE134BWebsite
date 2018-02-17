@@ -4,12 +4,36 @@ var l = JSON.parse(sessionStorage.getItem("list"));
 
 function remove(e, index){
 	
+	console.log("e: " + e);
+	console.log("index: " + index);
+
+	// update to most recent list
+	l = JSON.parse(sessionStorage.getItem("list"));
+
+	// for checkout payment
 	var price = l[index].price;
 	updateTotal(-price);
+
+	// hide div
 	e.parentNode.parentNode.parentNode.style.display='none';
+
+	// remove element from list
 	l.splice(index, 1);
+
+	// store this new list
+	sessionStorage.setItem("list", JSON.stringify(l));
+
+	//console.log(sessionStorage.getItem("cartNumber"));
 	//update the local storage
 	sessionStorage.setItem("cartNumber", sessionStorage.getItem("cartNumber")-1);
+}
+
+function calcNewIndex(list) {
+	// assuming list is an array of dishes
+	for(let i = 0; i < list.length; i++) {
+		list[i].index = i;
+	}
+	return list;
 }
 
 function createTotal (newprice){
@@ -116,6 +140,7 @@ function addElement(name, price, img){
 	div3.className = "removeItem";
 	//remove button
 	var button = document.createElement("BUTTON");
+	console.log("a index: " + index);
 	button.setAttribute("onclick", "remove(this," + index +")");
 	var t = document.createTextNode("remove");
 	button.appendChild(t);
